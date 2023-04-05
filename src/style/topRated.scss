@@ -1,0 +1,57 @@
+#topRated{
+  padding: 80px 0;
+  transition: 800ms;
+  h1{
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+    font-family: "Roboto",sans-serif;
+  }
+  .topRated{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    img{
+      width: 200px;
+      height: 320px;
+      padding: 0 20px;
+    }
+    .popular--card{
+      width: 20%;
+      padding: 30px 0;
+      border-radius: 10px;
+      h3{
+        margin-top: 20px;
+        font-family: "Roboto",sans-serif;
+        text-align: center;
+      }
+    }
+  }
+  .top--page{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    button{
+      padding: 8px 15px;
+      margin: 20px;
+      border: forestgreen 2px solid;
+      border-radius: 10px;
+      background: forestgreen;
+      color: white;
+      box-shadow: 0 0 15px 5px forestgreen;
+      font-weight: 700;
+    }
+    &__buttons{
+      margin-left: 100px;
+      margin-right: 80px;
+      button{
+        padding: 8px 15px;
+        margin: 20px;
+        border: blue 2px solid;
+        border-radius: 10px;
+        box-shadow: 0 0 15px 5px blue;
+      }
+    }
+  }
+}

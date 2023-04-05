@@ -1,0 +1,11 @@
+#video{
+  padding: 50px 0;
+  transition: 800ms;
+  .video{
+    &--card{
+      iframe{
+        border-radius: 15px;
+      }
+    }
+  }
+}

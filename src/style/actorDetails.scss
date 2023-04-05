@@ -1,0 +1,29 @@
+#actorDetails {
+  padding: 70px 0;
+  transition: 800ms;
+  .actorDetails {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    img{
+      border-radius: 15px;
+    }
+    &--info {
+      width: 60%;
+      h3 {
+        margin: 10px 0;
+      }
+      h6 {
+        color: blue;
+        cursor: pointer;
+      }
+      &__about {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      h5{
+        font-size: 22px;
+      }
+    }
+  }
+}

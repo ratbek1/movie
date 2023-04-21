@@ -58,10 +58,7 @@ const ActorDetails = () => {
                         </div>
                         <h5>Биография</h5>
                         <p>{biography?.slice(0,bio)}</p>
-                        <h6 onClick={() => {
-                        more(biography)
-                        }
-                        }>{bio === 300 ? "Читать ещё" : "Закрыть"}</h6>
+                        <h6  onClick={() => {more(biography)}}>{bio === 300 ? "Читать ещё" : "Закрыть"}</h6>
                         <ActorMovie personId={personId}/>
                     </div>
                 </div>

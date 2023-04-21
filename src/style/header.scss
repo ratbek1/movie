@@ -1,4 +1,4 @@
-#header{
+#header {
   transition: 800ms;
   padding: 20px 0;
   background-color: rgb(250, 247, 247);
@@ -6,19 +6,23 @@
   position: sticky;
   top: 0;
   z-index: 99;
-  .header{
-    img{
+
+  .header {
+    img {
       width: 150px;
     }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &--nav{
-      .active{
+
+    &--nav {
+      .active {
         background: rgba(8, 232, 192, 0.85);
         border-radius: 15px;
       }
-      &__link{
+
+      &__link {
         color: white;
         font-size: 20px;
         margin: 0 20px;
@@ -27,8 +31,9 @@
       }
 
     }
-    &--btn{
-      select{
+
+    &--btn {
+      select {
         outline: none;
         padding: 5px;
         margin-right: 25px;
@@ -37,18 +42,21 @@
         color: white;
         box-shadow: 0 0 18px #00e796;
       }
-      input{
+
+      input {
         padding: 6px 15px;
         outline: none;
         border-radius: 15px;
         font-size: 15px;
         transition: 400ms;
         text-shadow: 0 0 1px black;
-        &:focus{
+
+        &:focus {
           box-shadow: 0 0 18px aqua;
         }
       }
-      button{
+
+      button {
         background: #00ff9d;
         padding: 10px 30px;
         border-radius: 15px;
@@ -57,18 +65,50 @@
         transition: .5s;
         font-weight: 700;
         margin-left: 15px;
+
         &:hover {
           background: #0573f1;
         }
       }
     }
-    &--dark{
-      button{
+
+    &--dark {
+      display: flex;
+      align-items: center;
+
+      button {
         padding: 8px 10px;
         border-radius: 10px;
-        margin-right: 15px;
+        margin-left: 10px;
         font-size: 18px;
         color: black;
+      }
+    }
+
+    &--mode {
+      width: 60px;
+      height: 30px;
+      background: #676666;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      transition: 800ms;
+      &__black {
+        transition: 800ms;
+        width: 25px;
+        height: 25px;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      &__white {
+        transition: 800ms;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        background: transparent;
+        border-radius: 50%;
+        cursor: pointer;
       }
     }
   }

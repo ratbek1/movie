@@ -8,6 +8,7 @@ import {LanguageContext} from "../../context";
 const ActorMovie = ({personId}) => {
     const [actorMovie, setActorMovie] = useState([])
     const {language} = useContext(LanguageContext)
+    const {dark} = useContext(LanguageContext)
     const getActorMovie = (key) => {
         axios(`https://api.themoviedb.org/3/person/${personId}/movie_credits?api_key=${key}&language=${language}`)
             .then((res) => {
@@ -20,7 +21,13 @@ useEffect(() => {
     console.log(actorMovie)
 
     return (
-        <div id="actorMovie">
+        <div id="actorMovie" style={{
+            background: dark === true ? "darkgrey" : "",
+            border: dark === true ? "3px solid white" : "3px solid black",
+            borderRadius: "20px",
+            overflow: "hidden",
+            marginTop: "50px"
+        }}>
                 <div className="actorMovie">
                     {
                         actorMovie.map((el) => (

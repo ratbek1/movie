@@ -3,7 +3,7 @@ import {LanguageContext} from "./index";
 
 const RootContext = ({children}) => {
     const [language, setLanguage] = useState("en-US")
-    const [dark, setDark] = useState(false)
+    const [dark, setDark] = useState("")
     return (
         <div>
             <LanguageContext.Provider value={{

@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext,useState} from 'react';
 import {NavLink, useNavigate} from "react-router-dom";
 import logo from "../../img/header_logo.svg"
 import {LanguageContext} from "../../context";
@@ -11,6 +11,7 @@ const Header = () => {
     const {setLanguage} = useContext(LanguageContext)
     const {setDark} = useContext(LanguageContext)
     const {dark} = useContext(LanguageContext)
+
     return (
         <div id="header" style={{
             background: dark === true ? "black" : "white",
@@ -51,9 +52,18 @@ const Header = () => {
                             border: dark === true ? "white 2px solid" : "black 2px solid"
                         }}>Search</button>
                     </div>
-                    <div className="header--dark">
-                        <button onClick={() => setDark(false)}><CiLight/></button>
-                        <button onClick={() => setDark(true)}><MdDarkMode/></button>
+                    {/*<div className="header--dark">*/}
+                    {/*    <button onClick={() => setDark(false)}><CiLight/></button>*/}
+                    {/*    <button onClick={() => setDark(true)}><MdDarkMode/></button>*/}
+                    {/*</div>*/}
+                    <div className="header--mode" style={{
+                        background: dark === true ? "white" : "black"
+                    }}>
+                        <div className="header--mode__black" onClick={() => setDark(true)} style={{
+                            transform: dark === true ? "translateX(35px)" : "",
+                            background: dark === true ? "black" : "white"
+                        }}></div>
+                        <div className="header--mode__white" onClick={() => setDark(false)}></div>
                     </div>
                 </div>
             </div>

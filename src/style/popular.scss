@@ -1,28 +1,28 @@
-#popular{
+#popular {
   padding: 80px 0;
   transition: 800ms;
-  h1{
+  h1 {
     padding-bottom: 40px;
     text-align: center;
     color: white;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
   }
-  .popular{
+  .popular {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    img{
-      width: 200px;
+    img {
+      width: 250px;
       height: 320px;
       padding: 0 20px;
     }
-    &--card{
+    &--card {
       width: 20%;
       padding: 30px 0;
       border-radius: 10px;
-      h3{
+      h3 {
         margin-top: 20px;
-        font-family: "Roboto",sans-serif;
+        font-family: "Roboto", sans-serif;
         text-align: center;
       }
     }
@@ -40,10 +40,10 @@
       box-shadow: 0 0 15px 5px cyan;
       font-weight: 700;
     }
-    &__buttons{
+    &__buttons {
       margin-left: 100px;
       margin-right: 80px;
-      button{
+      button {
         padding: 8px 15px;
         margin: 20px;
         border: white 2px solid;
@@ -55,5 +55,4 @@
       }
     }
   }
-
 }
